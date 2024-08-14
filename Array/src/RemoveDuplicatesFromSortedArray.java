@@ -6,12 +6,12 @@ public class RemoveDuplicatesFromSortedArray {
     // - 返回 k 。
     public int removeDuplicates(int[] nums) {
         int n = nums.length;
-        if (n == 0) {
-            return 0;
+        if (n <= 1) {
+            return n;
         }
         int pre = nums[0];
         int idx = 0;
-        for (int pos = 0; pos < n; pos++) {
+        for (int pos = 1; pos < n; pos++) {
             int cur = nums[pos];
             if (cur != pre) {
                 nums[++idx] = cur;
