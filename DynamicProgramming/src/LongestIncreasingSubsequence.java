@@ -1,3 +1,6 @@
+import java.util.ArrayDeque;
+import java.util.Deque;
+
 public class LongestIncreasingSubsequence {
     // 最长递增子序列
     // 给你一个整数数组 nums ，找到其中最长严格递增子序列的长度。
@@ -12,9 +15,7 @@ public class LongestIncreasingSubsequence {
                 dp[idx++] = nums[i]; // 可以放到递增区间
                 continue;
             }
-            // 二分查找，找到第一个大于或等于的元素并替换它
-            // 为什么还替换等于的元素？，因为严格递增序列不能出现重复元素
-            // 只替换大元素可能导致重复，即前面有相同的元素
+            // 二分查找，找到第一个大于或等于的元素并替换它，满足严格递增
             int left = 0;
             int right = idx - 1;
             while (left < right) {
