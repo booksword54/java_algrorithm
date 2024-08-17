@@ -1,3 +1,5 @@
+package one_dimensional;
+
 import java.util.Arrays;
 
 public class CoinChange {

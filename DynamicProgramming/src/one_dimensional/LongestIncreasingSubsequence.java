@@ -1,3 +1,5 @@
+package one_dimensional;
+
 import java.util.ArrayDeque;
 import java.util.Deque;
 

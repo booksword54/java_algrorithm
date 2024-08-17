@@ -1,3 +1,5 @@
+package one_dimensional;
+
 public class ClimbingStairs {
     // 爬楼梯
     // 假设你正在爬楼梯。需要 n 阶你才能到达楼顶。
