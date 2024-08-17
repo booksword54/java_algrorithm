@@ -21,7 +21,7 @@ public class LongestIncreasingSubsequence {
             while (left < right) {
                 int mid = ((right - left) >> 1) + left;
                 if (nums[i] <= dp[mid]) {
-                    right = mid; // 相等元素也替换
+                    right = mid;
                 } else {
                     left = mid + 1;
                 }
