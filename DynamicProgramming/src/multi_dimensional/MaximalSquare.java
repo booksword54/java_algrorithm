@@ -26,7 +26,7 @@ public class MaximalSquare {
                     int up = dp[i - 1][j]; // 上方全为1的正方形的边长
                     int left = dp[i][j - 1]; // 左边全为1的正方形的边长
                     int upLeft = dp[i - 1][j - 1]; // 左上方全为1的正方形的边长
-                    dp[i][j] = Math.min(up, Math.min(left, upLeft)) + 1;
+                    dp[i][j] = Math.min(up, Math.min(left, upLeft)) + 1; // 最小的正方形边长向(i, j)方向拓展一格，拓展的内容保证全为1，因为另外两个边长较大的正方形覆盖到了
                     max = Math.max(max, dp[i][j]);
                 }
             }
