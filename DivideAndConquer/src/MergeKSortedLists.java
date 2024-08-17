@@ -16,7 +16,7 @@ public class MergeKSortedLists {
             return null;
         }
         int mid = ((right - left) >> 1) + left;
-        // 分治：拆分成两个子链表，分别执行合并操作
+        // 分治：拆分成两个子任务，分别执行合并操作
         // 合并：合并排序后的子链表
         return mergeTwoList(merge(lists, left, mid), merge(lists, mid + 1, right));
     }
