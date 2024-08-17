@@ -40,7 +40,7 @@ public class WordSearch {
                 return true;
             }
         }
-        visited[i][j] = false; // 现在不能走这个地方，撤回，之后可以重新访问
+        visited[i][j] = false; // 没有寻找到路径，撤回，之后可以重新访问
         return false;
     }
 }
